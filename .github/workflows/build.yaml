@@ -4,8 +4,9 @@ on:
   push:
     branches:
       - main
+      - test-branch
   pull_request:
-    types: [opened, synchronize, reopened]
+    types: [opened, reopened]
 
 jobs:
   build:
